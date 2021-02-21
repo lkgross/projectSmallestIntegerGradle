@@ -6,6 +6,8 @@ plugins {
 group 'bsu.comp152'
 version '1.0-SNAPSHOT'
 
+sourceCompatibility = 11
+
 repositories {
     mavenCentral()
 }
@@ -13,10 +15,6 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0', 'org.hamcrest:hamcrest:2.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
-}
-
-application {
-    mainClass = 'bsu.comp152.SmallestInteger'
 }
 
 run {
@@ -32,3 +30,5 @@ test {
         showStandardStreams = true
     }
 }
+
+mainClassName = 'bsu.comp152.SmallestInteger'
