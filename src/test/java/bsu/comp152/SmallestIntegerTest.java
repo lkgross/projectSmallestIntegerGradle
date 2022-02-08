@@ -68,7 +68,6 @@ public class SmallestIntegerTest {
         return numString;
     }
 
-    // TODO make this stop passing with empty main method
     @Test
     public void lowercaseQEndsProgram() {
         // if q does not end the program, the x will cause an exception
